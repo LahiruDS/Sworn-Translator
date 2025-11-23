@@ -5,7 +5,7 @@ export default function TranslatorDashboard() {
   const [docs, setDocs] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/translator/docs").then(res => {
+    axios.get("").then(res => {
       setDocs(res.data);
     });
   }, []);
@@ -18,7 +18,7 @@ export default function TranslatorDashboard() {
           <div key={doc._id} className="bg-white p-4 shadow rounded">
             <h3 className="font-semibold">{doc.originalName}</h3>
             <a
-              href={`http://localhost:5000/uploads/${doc.filePath}`}
+              href={""}
               className="text-blue-600 underline"
             >
               Download original

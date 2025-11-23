@@ -5,7 +5,7 @@ export default function ClientDownload() {
   const [docs, setDocs] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/client/final-docs").then(res => {
+    axios.get("").then(res => {
       setDocs(res.data);
     });
   }, []);
@@ -18,7 +18,7 @@ export default function ClientDownload() {
           <div key={doc._id} className="bg-white p-4 shadow rounded">
             <h3 className="font-semibold">{doc.finalName}</h3>
             <a
-              href={`http://localhost:5000/uploads/${doc.finalFilePath}`}
+              href={""}
               className="text-green-600 underline"
             >
               Download Certified Document
