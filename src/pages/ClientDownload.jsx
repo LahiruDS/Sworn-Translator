@@ -11,7 +11,7 @@ export default function ClientDownload() {
   }, []);
 
   return (
-    <div className="p-6">
+    <div className="p-6 min-h-64">
       <h2 className="text-2xl font-bold mb-4">Your Final Certified Documents</h2>
       <div className="grid gap-4">
         {docs.map((doc) => (

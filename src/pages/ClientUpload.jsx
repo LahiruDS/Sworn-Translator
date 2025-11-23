@@ -91,7 +91,7 @@ export default function ClientUpload() {
   }
 
   return (
-    <div className="p-6 max-w-2xl mx-auto min-h-96">
+    <div className="p-6 max-w-2xl mx-auto min-h-64">
       <h2 className="text-2xl font-bold mb-4">Upload Your Document</h2>
 
       <div className="mb-4">
